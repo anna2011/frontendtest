@@ -1,0 +1,18 @@
+@mixin vertical-align($position:relative) {
+    position: $position;
+    margin-top: -50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+@mixin vertical-align-text($position:absolute) {
+    position: $position;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+@mixin border {
+    background: transparent;
+    border: 2px solid $white;
+}
